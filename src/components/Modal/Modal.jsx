@@ -16,7 +16,6 @@ export const Modal = ({ url, text, funcCloseClick }) => {
     return () => {
       window.removeEventListener('keydown', hendlePressEsc);
     };
-    // Следующая строка нужна!!! что б вырубить ESLINT!!!!
     // eslint-disable-next-line
   }, []);
 
