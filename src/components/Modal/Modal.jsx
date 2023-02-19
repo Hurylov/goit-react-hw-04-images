@@ -16,8 +16,8 @@ export const Modal = ({ url, text, funcCloseClick }) => {
     return () => {
       window.removeEventListener('keydown', hendlePressEsc);
     };
-    // eslint-disable-next-line
-  }, []);
+    
+  }, [funcCloseClick]);
 
   const hendleClickBackdrop = event => {
     if (event.currentTarget === event.target) {
